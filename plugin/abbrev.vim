@@ -1,8 +1,8 @@
-if exists('loaded_abbrev')
+if exists('g:loaded_abbrev') || &compatible
 	finish
 endif
 
-let loaded_abbrev = 1
+let g:loaded_abbrev = 1
 
 " brief	add command alias for 'exe'-mode commands
 function! s:abbrev_exec(abbrev, expansion)
